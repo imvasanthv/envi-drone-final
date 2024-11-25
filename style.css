@@ -1,0 +1,648 @@
+/* general */
+
+body {
+  height: 100%;
+  margin: 0;
+  color: #2b2c2e;
+  background-color: #f5f6fb !important;
+  font-family: 'Montserrat' !important;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.gotopbtn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 99;
+  background-color: #24d82a;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  transition: transform 300ms ease-in-out;
+}
+
+.gotopbtn:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* header */
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.navbar-brand img {
+  width: 30px;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover, .active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar .btn {
+  width: 100px;
+  border: 1px solid #fff !important;
+  color: #fff;
+}
+
+.navbar .btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.navbar .btn-2 {
+  border: none !important;
+  background-color: #24c9d8;
+}
+
+.navbar .btn-2:hover {
+  background-color: #118d99;
+}
+
+/* hero banner */
+
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 375px;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.hero-back {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.hero-back img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-back .nature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-container {
+  position: relative;
+  padding-top: 200px;
+  color: #43ea2d;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 5em;
+  font-weight: 700;
+  color: #25d719;
+  
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+.hero-text .btn {
+  padding: 20px 40px;
+  border-radius: 10px;
+  width: 300px;
+  font-weight: 600;
+  font-size: 2em;
+  color: #fff;
+  border: none;
+  margin-top: 80px;
+}
+
+.hero-text .btn {
+  background-color: #25d719 !important;
+  box-shadow: 7px 7px #21c316;
+}
+
+.hero-text .btn:active {
+  background-color: #118d99;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 90%;
+  text-align: justify;
+  padding: 50px;
+  max-width: 500px;
+  margin-left: auto;
+  color: #2b2c2e;
+}
+
+.login-container h1 {
+  color: #0f8b06;
+  font-weight: 700;
+}
+
+.login-container button {
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px;
+  font-weight: 600;
+  border: none;
+}
+
+.login-container button.fb {
+  background-color: #ea6230;
+}
+
+.login-container button.fb:hover {
+  background-color: #bb4114;
+}
+
+.login-container button.gmail {
+  background-color: #24c9d8;
+}
+
+.login-container button.gmail:hover {
+  background-color: #118d99;
+}
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+  color: #9f9f9f;
+}
+
+.strike > span:before,
+.strike > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: #9f9f9f;
+}
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+/* main section */
+
+#main {
+  margin: 200px 0;
+}
+
+/* about page */
+
+#about-section, .about-section {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 70px 140px 0 rgba(130, 136, 171, 0.2);
+  width: 100%;
+  height: auto;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-img {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+  flex: 0 0 50%;
+}
+
+.about-img::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.img-1::before {
+  border-radius: 10px 0 0 10px;
+  background-image: url('imgs/logobg.png');
+}
+
+.img-2::before {
+  border-radius: 0 10px 10px 0;
+  background-image: url(https://i.postimg.cc/sDJYC26c/Passport.png);
+}
+
+.img-3::before {
+  border-radius: 10px 0 0 10px;
+  background-image: url(https://i.postimg.cc/G3GPzKv6/VISA.png);
+}
+
+.img-4::before {
+  border-radius: 0 10px 10px 0;
+  background-image: url(https://i.postimg.cc/SQd6wstG/ticket2.png);
+}
+
+.about-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.about-text {
+  width: 60%;
+  padding: 48px 56px;
+}
+
+.about-text h1 {
+  font-weight: 700;
+}
+
+.about-text button {
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #fff;
+  background-color: #24c9d8;
+  box-shadow: 5px 5px #118d99;
+}
+
+.about-text button:hover {
+  color: #fff;
+  background-color: #24c9d8;
+}
+
+.about-text button:active {
+  background-color: #118d99;
+  box-shadow: none;
+}
+
+/* packages page */
+
+.package-section {
+  margin: 200px 0;
+  text-align: center;
+}
+
+.package-section h1 {
+  font-weight: 700;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px !important;
+  width: 100%;
+  height: 380px !important;
+  border: none !important;
+  box-shadow: 0 70px 140px 0 rgba(130, 136, 171, 0.2);
+}
+
+.card:hover{
+  cursor: pointer;
+box-shadow: 0 0 70px rgba(130, 136, 171, 0.30);
+border: #24c9d8 2px solid;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px 30px 30px 30px !important;
+}
+
+.card-body li {
+text-align: left;
+margin: 0;
+padding-left: 48px;
+list-style: none;
+background-repeat: no-repeat;
+background-position: left center;
+background-size: 28px;
+}
+
+li.japan{
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_Japan_%28with_border%29.png/640px-Flag_of_Japan_%28with_border%29.png");
+}
+
+li.korea{
+background-image: url("https://cdn.britannica.com/49/1949-004-8818300C/Flag-South-Korea.jpg");
+}
+
+li.hongkong{
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/800px-Flag_of_Hong_Kong.svg.png");
+}
+
+li.australia{
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg");
+}
+
+li.switzerland{
+background-image: url("https://w7.pngwing.com/pngs/648/91/png-transparent-flag-of-switzerland-flag-of-spain-switzerland-angle-flag-text-thumbnail.png");
+}
+
+li.arizona{
+background-image: url("https://azlibrary.gov/sites/default/files/arizona-state-flag.png");
+}
+
+.price{
+font-size: 2.5em;
+}
+
+.package-img {
+  overflow: hidden;
+  height: 200px;
+  border-radius: 10px;
+  border-radius: 12px 12px 0 0;
+}
+
+.package-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+
+.card-body h3 {
+  font-weight: 700;
+}
+
+.card-body h4 {
+  color: #ea6230;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.card-body button {
+  background-color: #24c9d8;
+  border: none;
+  width: 80%;
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.card-body button:hover {
+  background-color: #118d99;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+}
+
+.package-section .btn {
+  margin-top: 50px;
+  border: none;
+  width: 300px;
+  padding: 15px 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ea6230;
+  box-shadow: 5px 5px #bb4114;
+}
+
+.package-section .btn:hover {
+  color: #fff;
+  background-color: #ea6230;
+}
+
+.package-section .btn:active {
+  background-color: #bb4114;
+}
+
+/* download page */
+
+.download-section {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 70px 140px 0 rgba(130, 136, 171, 0.2);
+  width: 100%;
+}
+
+.download-text {
+  padding: 48px 56px;
+}
+
+.download-text h1 {
+  font-weight: 700;
+  color: #24c9d8;
+}
+
+.download-img {
+  position: absolute;
+  right: 0;
+  bottom: -500px;
+  z-index: -1;
+}
+
+.download-btn {
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px 10px;
+  background-color: #ea6230;
+  box-shadow: 5px 5px #bb4114;
+  z-index: 1;
+}
+
+.download-btn:hover {
+  cursor: pointer;
+}
+
+.download-btn:active {
+  background-color: #bb4114;
+  box-shadow: none;
+}
+
+
+/* contact page */
+
+.contact-text {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 48px 56px;
+  box-shadow: 0 70px 140px 0 rgba(130, 136, 171, 0.2);
+}
+
+.logo-bg {
+  background-color: #24c9d8;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+.contact-text img {
+  width: 100%;
+}
+
+.contact-text h1 {
+  font-weight: 700;
+  color: #ea6230;
+}
+
+.contact-text h2{
+  font-weight: 700;
+  color: #ea6230;
+}
+
+textarea {
+  resize: none !important;
+  border: 1px solid #2b2c2e !important;
+}
+
+.contact-text input, textarea {
+  border: 1px solid #2b2c2e;
+  color: #fff !important;
+}
+
+.contact-text .btn {
+  border: none;
+  width: 200px;
+  padding: 15px 10px; 
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.contact-text .btn {
+  color: #fff;
+  background-color: #24c9d8;
+  box-shadow: 5px 5px #118d99;
+}
+
+.contact-text .btn:hover {
+  background-color: #24c9d8;
+}
+
+.contact-text .btn:active {
+  background-color: #118d99;
+}
+
+.contact-text ul {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.contact-text li {
+  margin-bottom: 10px;
+}
+
+.contact-text li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.contact-text li a:hover {
+  text-decoration: underline;
+}
+
+/* footer section */
+
+footer {
+  width: 100%;
+  height: 300px;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  background-color: #2b2c2e;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+
+footer img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.footer-icons {
+  gap: 15px;
+}
+
+.footer-icons a {
+  background-color: #ea6230;
+  color: #2b2c2e;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+}
+
+.footer-icons a:hover {
+  background-color: #bb4114;
+  color: #2b2c2e;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgb(211, 211, 211);
+  font-size: smaller;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
