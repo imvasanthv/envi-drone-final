@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs\logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Home | ENVI-DRONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                <a class="navbar-brand" href="#"><img src="imgs\logo.png" alt=""> ENVI-DRONE</a>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stats.html">Stats</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="about.html">Packages</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="user.html">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!--<form class="justify-content-end">
+                    <button class="btn rounded-pill me-2" type="button" id="login">Login</button>
+                    <button class="btn btn-2 rounded-pill" type="button">Sign Up</button>
+                </form>-->
+            </nav>
+        </div>
+    </header>
+
+    <a href="#" class="gotopbtn rounded-circle"><i class="fas fa-arrow-up"></i></a>
+
+    <section class="hero">
+        <div class="hero-back">
+            <img src="imgs\homebg.jpeg" alt="">
+        </div>
+        <div class="container">
+            <div class="hero-container row">
+                <div class="hero-text col col-lg-6">
+                    <h1>ECOSTEP</h1>
+                
+                    <p>A small step for us, a giant leap for a cleaner, greener Earth. Let’s make every action count.</p>
+                    <a href="#main" class="btn">Learn More</a>
+                </div>
+                <div class="login col col-lg-6">
+                    <div class="login-container">
+                        <form action="">
+                            <h1>GreenTrack</h1>
+                            
+                            <p>Track air quality and waste levels effortlessly. Dive into real-time stats and make informed decisions for a sustainable future.</p>
+                            
+                            <center><a href="stats.html" class="btn fb w-50 mt-4 mb-3">View Live Data</a></center>
+                           
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <div id="about-section" class="d-flex">
+                <div class="about-img img-1">
+                </div>
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <p>We are dedicated to providing accurate insights into your area's air quality and environmental conditions. Our mission is to empower you with real-time data and actionable information, helping you create a healthier, safer, and more sustainable living environment. Together, let’s breathe better and live healthier!</p>
+                    
+                    
+                </div>
+            </div>
+
+            <!--<div class="package-section">
+                <h1>Our Packages</h1>
+                <p>Discover our various packages you can enjoy.</p>
+                <div class="package-list row g-5">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="package-img">
+                                <img src="https://handluggageonly.co.uk/wp-content/uploads/2019/05/Japanese-Alps.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h3>The Rising Sun Package</h3>
+                                <p class="card-text">A trip to the beautiful lands of Japan! Plan with us your vacation
+                                    in the land of the rising sun.</p>
+                                <h4>Package includes:</h4>
+                                <ul>
+                                    <li class="japan">Flight Accomodation</li>
+                                    <li class="japan">Car Rental</li>
+                                    <li class="japan">Inn Reservation</li>
+                                    <li class="japan">Tour Guide</li>
+                                </ul>
+                                <div class="bottom">
+                                    <span class="price">₱74,999</span>
+                                    <button>Avail now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="package-img">
+                                <img src="https://i.pinimg.com/originals/b2/a3/c9/b2a3c9574c2e2bb9ead542a2b4cc352f.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h3>The Morning Calm Package</h3>
+                                <p class="card-text">Wanting for a trip to South korea? Avail our package now for an
+                                    unforgettable experience!</p>
+                                <h4>Package includes:</h4>
+                                <ul>
+                                    <li class="korea">Flight Accomodation</li>
+                                    <li class="korea">Car Rental</li>
+                                    <li class="korea">Hotel Reservation</li>
+                                    <li class="korea">Tour Guide</li>
+                                </ul>
+                                <div class="bottom">
+                                    <span class="price">₱75,499</span>
+                                    <button>Avail now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="package-img">
+                                <img src="https://media.timeout.com/images/105631212/750/562/image.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h3>Asia's World City Package</h3>
+                                <p class="card-text">Ever been to Hongkong? Not yet? Book our exclusive package now for
+                                    your first ever experience in the Fragrant Harbour.</p>
+                                <h4>Package includes:</h4>
+                                <ul>
+                                    <li class="hongkong">Flight Accomodation</li>
+                                    <li class="hongkong">Hotel Reservation</li>
+                                    <li class="hongkong">Tour Guide</li>
+                                </ul>
+                                <div class="bottom">
+                                    <span class="price">₱70,499</span>
+                                    <button>Avail now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="stats.html"><button class="btn">Read More</button></a>
+            </div>
+        </div>-->
+    </section>
+
+    <footer>
+        <div class="footer-icons d-flex justify-content-center mb-3">
+            <a href="#" class="rounded-circle"><i class="fa fa-facebook-f"></i></a>
+            <a href="#" class="rounded-circle"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="rounded-circle"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="rounded-circle"><i class="fa fa-google"></i></a>
+        </div>
+        <h5><img src="https://i.postimg.cc/x82gNxgc/nature-logo.png" width="35" alt="">ENVI - DRONE</h5>
+        <div class="footer-links">
+            <a href="index.html" class="mx-2">HOME</a> |
+            
+            <a href="stats.html" class="mx-2">STATS</a> |
+            <a href="user.html" class="mx-2">USER</a> |
+            <a href="contact.html" class="mx-2">CONTACT US</a>
+        </div>
+    </footer>
+</body>
+
+</html>
